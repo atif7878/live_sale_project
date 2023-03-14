@@ -1,0 +1,37 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5" style="position: relative; text-decoration: none;">
+            <img class="thumbnail" style="height: 600px;border-radius: 12px;" src="{{categorysitem.image.url}}">
+        </div>
+        <div class="col-lg-7">
+            <div style="padding: 5px;border-radius: 12px;border: none;">
+                <h3 href="" style="border: none;border-radius: 12px;outline: none;color: #d73676;">
+                    <strong>{{categorysitem.name}}</strong>
+                </h3>
+                <h5><strong>${{categorysitem.price|floatformat:2}}</strong></h5><br><br>
+                <h4>Product Details</h4>
+                <p>How fun and festive is this pumpkin graphic tee?? I love the black and white buffalo plaid and
+                    the super soft material!</p><br><br><br>
+                <h4 style="font-weight: bold;">Available in these sizes</h4>
+                <p style="padding: 0;margin: 0px"><span style="font-weight: bold;">S</span> (2/4)</p>
+                <p style="padding: 0;margin: 0px"><span style="font-weight: bold;">M</span> (6/8)</p>
+                <p style="padding: 0;margin: 0px"><span style="font-weight: bold;">L</span> (12/10)</p>
+                <p style="padding: 0;margin: 0px"><span style="font-weight: bold;">2XL</span> (18)</p>
+                <br>
+                <br>
+                <button style="
+                width: 200px;
+                height: 40px;
+                border-radius: 7px;
+                border: none;
+                outline: none;
+                background: #dc226b;"><a href="#" style="color: #fff; text-decoration: none;">Add to cart</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
